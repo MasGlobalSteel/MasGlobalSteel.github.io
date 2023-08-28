@@ -2,8 +2,9 @@
 const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
-const RESOURCES = {
-  "assets/AssetManifest.json": "dccecaa14d243b69a9c888215237b8c6",
+
+const RESOURCES = {"assets/AssetManifest.bin": "7c2fc47b4d7b1f22efbdc78954d53232",
+"assets/AssetManifest.json": "dbe62e729e3b9212349d43bad4afbfd2",
 "assets/assets/files/one.pdf": "64fe6ee75dba731c3e087219563c2e0a",
 "assets/assets/fonts/OpenSansRegular.ttf": "3eb5459d91a5743e0deaf2c7d7896b08",
 "assets/assets/fonts/PoppinsBlack.ttf": "14d00dab1f6802e787183ecab5cce85e",
@@ -13,56 +14,60 @@ const RESOURCES = {
 "assets/assets/fonts/PoppinsMedium.ttf": "bf59c687bc6d3a70204d3944082c5cc0",
 "assets/assets/fonts/PoppinsThin.ttf": "9ec263601ee3fcd71763941207c9ad0d",
 "assets/assets/gif/animated-background.gif": "2ce3336e2f6e72eb27a5e079bff52d20",
-"assets/assets/images/1.jpg": "28c0e9444b90d202664319294a2f3414",
-"assets/assets/images/10.jpg": "3341c6cd4abfd947e8d7f136f9a9c6eb",
-"assets/assets/images/11.jpg": "7aca276643833d389cb40f2188cee7db",
-"assets/assets/images/2.jpg": "af8e3b94e6e1659be69f5d0607fe543f",
-"assets/assets/images/23.jpg": "0cd51138d68c5585cbcf231588d3dc23",
-"assets/assets/images/24.jpg": "af4c37734b0c7b45c3faf2aee9840b46",
-"assets/assets/images/25.jpg": "38b3b215e4f759e1971f7340d93d76f1",
-"assets/assets/images/26.jpg": "454cbbd4df4c947599490088b8189c99",
-"assets/assets/images/27.jpg": "acb4514b4946790a6937328b39bb11a8",
-"assets/assets/images/28.jpg": "3d10f8a41652c4eaf0382def23e136b7",
-"assets/assets/images/29.jpg": "efbfe430b715f216a1b157d0aab99408",
-"assets/assets/images/3.jpg": "50fda04a304a01d0b4f4a2390d3278f3",
-"assets/assets/images/30.jpg": "546f554b07209834b8770f91f1d4aa62",
-"assets/assets/images/31.jpg": "1239cb7660b03b6eb973ab31648c4a6b",
-"assets/assets/images/32.jpg": "ce977d3d71f40571bb8b6b14991e9431",
-"assets/assets/images/33.jpg": "3376952a6d00515317b7b67acc6e021f",
-"assets/assets/images/34.jpg": "32dcc87257a55b825aa8f29cd3625415",
-"assets/assets/images/35.jpg": "5ef73be3a093fa8f2bc7eaf9a4c63fa5",
-"assets/assets/images/36.jpg": "0b63424cead0074ad7a0951c2a0ef119",
+"assets/assets/images/1.jpg": "8c1df65e606f1ae69daad802b10d940c",
+"assets/assets/images/10.jpg": "d1ac9bc7ce6a4334ad6c4c763c599966",
+"assets/assets/images/11.jpg": "311a603fbbd67649ae15b1b11687872c",
+"assets/assets/images/2.jpg": "467f6cc121ed305a23986261b4130946",
+"assets/assets/images/23.jpg": "074e55ca725b6306bc619ed8b82a2fb3",
+"assets/assets/images/24.jpg": "9b5fe31038f1e023ce4eb37bacdf5f02",
+"assets/assets/images/25.jpg": "e3798f740ceb6920147d99da3d859169",
+"assets/assets/images/26.jpg": "a0455b8c59414b884b7af51cef20b0a9",
+"assets/assets/images/27.jpg": "9a46eba0a6300f6709759219821fd768",
+"assets/assets/images/28.jpg": "a41cf82eafc1ca38df87fc948a611ee7",
+"assets/assets/images/29.jpg": "27db38646195c9d92206fdda6aa69457",
+"assets/assets/images/3.jpg": "bf7d11c9d046d3f38407c2414055079b",
+"assets/assets/images/30.jpg": "830f3190c324ea86ad841667ff9fe8ee",
+"assets/assets/images/31.jpg": "cd58e0afeeca6ce5c2f07c2793dae4a1",
+"assets/assets/images/32.jpg": "98f43837344533bd55070eeebe6d70ee",
+"assets/assets/images/33.jpg": "44d00f78948f1e84c176e4de0881d383",
+"assets/assets/images/34.jpg": "e403b81d3a22dc6689ac57ebe893e6bf",
+"assets/assets/images/35.jpg": "33d66819a35ec08a8c59a1ff7bc7933e",
+"assets/assets/images/36.jpg": "1502585fc4fd70a75dcba2f255de2a83",
 "assets/assets/images/37.webp": "39f22f531e914f58ba7eef45e39d89cc",
 "assets/assets/images/38.webp": "b70f7dd7e6ffbcaeff879eca09118214",
 "assets/assets/images/39.webp": "81a83ada6aaddd88f850ad6950eaba71",
-"assets/assets/images/4.jpg": "420b8f0a692e97a3311afda51838c3c0",
+"assets/assets/images/4.jpg": "33a062c5a73e26bb26779e59062261e1",
 "assets/assets/images/40.webp": "8fe836e10c3aea1fe2bd951ef5469c35",
-"assets/assets/images/5.jpg": "79c54806cb644df14f608f7c984cc186",
-"assets/assets/images/6.jpg": "52d8cae320558018ea5ddac516310a85",
-"assets/assets/images/7.jpg": "795d6ee35ddd8fbc8fbc622762a766ae",
-"assets/assets/images/8.jpg": "3143c826bb7b40192c229b570764d94a",
-"assets/assets/images/9.jpg": "a8c82ecb4d4b45144f8f66680e7f60c5",
-"assets/assets/images/about_us.jpg": "f6f3cb065ad49810cf37b9e303f7768e",
+"assets/assets/images/41.jpg": "028c52d10e61db1b359f0098984ad6e7",
+"assets/assets/images/42.jpg": "5abed6890e6f55daccf3bb5b72121591",
+"assets/assets/images/43.webp": "d8702ac1210981fb19a0c491798eebbe",
+"assets/assets/images/44.webp": "6e2470ef516f535604ff39a49382e517",
+"assets/assets/images/45.jpg": "d90123bdc81619118b654afe206d5a65",
+"assets/assets/images/46.jpeg": "d79999d3c1e38e392c4a40f886d263aa",
+"assets/assets/images/5.jpg": "6a3b72f03b45ed0d03689d5c30847f12",
+"assets/assets/images/6.jpg": "6b73d9024c0ccc5338c83cb11fd2823d",
+"assets/assets/images/7.jpg": "860c10812dc1f8ed26c73102ced69e69",
+"assets/assets/images/8.jpg": "5ed4703427bda8b1d99e93103d168f2d",
+"assets/assets/images/9.jpg": "b7d341733af903352d7e4e991868533d",
+"assets/assets/images/about_us.jpg": "5bddbe165485c060bb1d41ebc645a1fd",
 "assets/assets/images/brassrods.png": "1b6925eaf349bd10cd463f8f79d52a55",
-"assets/assets/images/brasstubes.png": "d11499e84be3a22055c6832afabd0523",
 "assets/assets/images/bureau.jpeg": "e11dfe54c25fc307ea875dbcf10333d6",
 "assets/assets/images/choose_us.png": "8a4e74a3a5471518877fad0dd886b66f",
-"assets/assets/images/contact_us.jpg": "aaf968fcd532e7c5b7562ea7c70a9641",
-"assets/assets/images/coopertubes.png": "e6e4e4e43729aba756ef001f79ba64dd",
+"assets/assets/images/contact_us.jpg": "fe09995084503b65dc62847ad5a011e5",
 "assets/assets/images/coppertubessection.png": "cb0e30ebbe62cc61c56b567590959f50",
-"assets/assets/images/fasteners.png": "5e62aec583abd34d2c24e6174dcec78e",
+"assets/assets/images/fasteners.png": "67e02232525a3dde8a97933e06f57915",
 "assets/assets/images/flanges-testing.jpeg": "9e6df85cc8efa3d14a96d4f3ce2d3f99",
 "assets/assets/images/flanges.png": "a698590d681e9be025b3005d64df98f3",
 "assets/assets/images/industrial-bg.jpg": "48f062fcfb67fa34adb8437e97dca522",
 "assets/assets/images/loader.png": "17d80737c95e23300e368ea3bd28d2fe",
-"assets/assets/images/loader_.png": "96b364bc7618aa112d4f69dad4c03850",
+"assets/assets/images/loader_.png": "d21385a1af0c029c9fd578ceaed68406",
 "assets/assets/images/logo%25201.png": "558b0beb7e3f633b3215c69d869dfaf4",
 "assets/assets/images/logo.png": "e098f8f16c8557cd15b9598ff4d3e886",
 "assets/assets/images/main%2520logo%25202.png": "aed427147786bab96612f75c308bc4ad",
 "assets/assets/images/pipes-products.jpg": "a708e8aa88aacbe3d0f06f9bd48b3aff",
 "assets/assets/images/product.webp": "ce9c28a42510de59bd201444b5128f56",
-"assets/assets/images/rodbars.png": "2e752dd35a8dd06902bc0036daf812be",
-"assets/assets/images/sheetplates.jpg": "e30a7a59d1b8104be4eea300230d6bc1",
+"assets/assets/images/rodbars.png": "644827e8b2d97d05d6ffb1714d38ebb2",
+"assets/assets/images/sheetplates.jpg": "f61a05a487d65189f084c4ed9984f9ff",
 "assets/assets/images/sheetplates.png": "4e6ec21bf6ce1cc89c5c2b6e80e300dd",
 "assets/assets/images/testing.png": "364a6f01dc27f4c751f3132a682bf2e1",
 "assets/assets/images/thirdparty1.png": "d080fbc94a029ef2765a1da8ef6ad02b",
@@ -76,34 +81,35 @@ const RESOURCES = {
 "assets/assets/images/thirdparty8.png": "1fa7a3136fddd13237ff444c87375e73",
 "assets/assets/images/world-wide-supplier.jpg": "2254f5734845c63fe8b42f591eee6006",
 "assets/FontManifest.json": "289a2049b0fa3e34d67d5d439cd340a4",
-"assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
-"assets/NOTICES": "e5388c761e267897e33136ba5a1c1bcd",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
-"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e",
-"canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
-"canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
-"edwe.png": "5dcef449791fa27946b3d35ad8803796",
+"assets/fonts/MaterialIcons-Regular.otf": "7154fe876b0f471b08398e435785e878",
+"assets/NOTICES": "735faf7524dac940400f499ad789afe7",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "89ed8f4e49bcdfc0b5bfc9b24591e347",
+"assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
+"canvaskit/canvaskit.js": "5caccb235fad20e9b72ea6da5a0094e6",
+"canvaskit/canvaskit.wasm": "d9f69e0f428f695dc3d66b3a83a4aa8e",
+"canvaskit/chromium/canvaskit.js": "ffb2bb6484d5689d91f393b60664d530",
+"canvaskit/chromium/canvaskit.wasm": "393ec8fb05d94036734f8104fa550a67",
+"canvaskit/skwasm.js": "95f16c6690f955a45b2317496983dbe9",
+"canvaskit/skwasm.wasm": "d1fde2560be92c0b07ad9cf9acb10d05",
+"canvaskit/skwasm.worker.js": "51253d3321b11ddb8d73fa8aa87d3b15",
 "favicon.png": "17d80737c95e23300e368ea3bd28d2fe",
-"flutter.js": "1cfe996e845b3a8a33f57607e8b09ee4",
+"flutter.js": "6b515e434cea20006b3ef1726d2c8894",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "63c60cab3767e9d2d6454fb3b1797ca0",
-"/": "63c60cab3767e9d2d6454fb3b1797ca0",
-"main.dart.js": "3e858eed5012839f9a74ec52cbf78d9e",
+"index.html": "707396396bf937e18cdb0ffb1de9264f",
+"/": "707396396bf937e18cdb0ffb1de9264f",
+"main.dart.js": "d91870dd42a928c9c7b475365959f1ac",
 "manifest.json": "c09562b51cfea8fbefe7bd2132518b58",
-"version.json": "75a2bc193d1ad3ebb2bf7e5e0ade99c6"
-};
-
+"version.json": "75a2bc193d1ad3ebb2bf7e5e0ade99c6"};
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = [
-  "main.dart.js",
+const CORE = ["main.dart.js",
 "index.html",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
+
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   self.skipWaiting();
@@ -114,7 +120,6 @@ self.addEventListener("install", (event) => {
     })
   );
 });
-
 // During activate, the cache is populated with the temp files downloaded in
 // install. If this service worker is upgrading from one with a saved
 // MANIFEST, then use this to retain unchanged resource files.
@@ -136,6 +141,8 @@ self.addEventListener("activate", function(event) {
         await caches.delete(TEMP);
         // Save the manifest to make future upgrades efficient.
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+        // Claim client to enable caching on first launch
+        self.clients.claim();
         return;
       }
       var oldManifest = await manifest.json();
@@ -161,6 +168,8 @@ self.addEventListener("activate", function(event) {
       await caches.delete(TEMP);
       // Save the manifest to make future upgrades efficient.
       await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+      // Claim client to enable caching on first launch
+      self.clients.claim();
       return;
     } catch (err) {
       // On an unhandled exception the state of the cache cannot be guaranteed.
@@ -171,7 +180,6 @@ self.addEventListener("activate", function(event) {
     }
   }());
 });
-
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
@@ -211,7 +219,6 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
-
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
@@ -224,7 +231,6 @@ self.addEventListener('message', (event) => {
     return;
   }
 });
-
 // Download offline will check the RESOURCES for all files not in the cache
 // and populate them.
 async function downloadOffline() {
@@ -245,7 +251,6 @@ async function downloadOffline() {
   }
   return contentCache.addAll(resources);
 }
-
 // Attempt to download the resource online before falling back to
 // the offline cache.
 function onlineFirst(event) {
